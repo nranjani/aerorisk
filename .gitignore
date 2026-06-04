@@ -1,0 +1,23 @@
+# Model file — too large for GitHub
+model/xgboost_model.pkl
+
+# Data file — too large for GitHub
+data/cleaned_data.csv
+data/Airline_Delay_Cause.csv
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Environment
+.env
+venv/
+.venv/
+
+# Streamlit
+.streamlit/secrets.toml
+
+# System files
+.DS_Store
+Thumbs.db
