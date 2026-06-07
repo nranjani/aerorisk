@@ -64,7 +64,7 @@ st.markdown("""
 
 # ── 2025 Crisis Banner ────────────────────────────────────────────────────────
 st.markdown("## 🚨 2025 U.S. Aviation Crisis")
-col1, col2, col3 = st.columns(3)
+col1, col2 = st.columns(2)
 
 with col1:
     st.markdown("""
@@ -81,15 +81,6 @@ with col2:
         <h2 style='color:#fd7e14; font-size:2rem;'>76.84%</h2>
         <p style='color:#333;'><b>On-time performance — worst in recent years</b></p>
         <p style='color:#888; font-size:11px;'>BTS via Kiplinger 2026</p>
-    </div>
-    """, unsafe_allow_html=True)
-
-with col3:
-    st.markdown("""
-    <div class='crisis-card'>
-        <h2 style='color:#4361ee; font-size:2rem;'>$30B+</h2>
-        <p style='color:#333;'><b>Annual flight disruption cost</b></p>
-        <p style='color:#888; font-size:11px;'>DOT 2024 + FAA/Nextor Research</p>
     </div>
     """, unsafe_allow_html=True)
 
@@ -137,9 +128,9 @@ with c4:
 
 st.markdown("<hr>", unsafe_allow_html=True)
 
-# ── Three Tools ───────────────────────────────────────────────────────────────
-st.markdown("## 🛠️ Three Decision Tools")
-col1, col2, col3 = st.columns(3)
+# ── Two Tools ───────────────────────────────────────────────────────────────
+st.markdown("## 🛠️ Two Decision Tools")
+col1, col2 = st.columns(2)
 
 with col1:
     st.markdown("""
@@ -164,19 +155,6 @@ with col2:
     """, unsafe_allow_html=True)
     if st.button("→ Analyze Delay Causes", use_container_width=True):
         st.switch_page("pages/2_Delay_Cause_Breakdown.py")
-
-with col3:
-    st.markdown("""
-    <div class='tool-card' style='background:#f0fff4; border-left:5px solid #2dc653;'>
-        <h3 style='color:#2dc653;'>🏆 Safest Airline Recommender</h3>
-        <p style='color:#333;'><b>For: Airport Analysts</b></p>
-        <p style='color:#555;'>Select any airport to get a normalized safety
-        ranking — top 3 safest and highest-risk carriers at that station.</p>
-    </div>
-    """, unsafe_allow_html=True)
-    if st.button("→ Find Safest Airline", use_container_width=True):
-        st.switch_page("pages/3_Safest_Airline_Recommender.py")
-
 st.markdown("<hr>", unsafe_allow_html=True)
 
 # ── Model Performance ─────────────────────────────────────────────────────────
@@ -209,7 +187,7 @@ st.markdown("<hr>", unsafe_allow_html=True)
 
 # ── Roadmap ───────────────────────────────────────────────────────────────────
 st.markdown("## 🚀 Future Roadmap")
-col1, col2, col3 = st.columns(3)
+col1, col2 = st.columns(2)
 
 with col1:
     st.info("""
@@ -226,18 +204,18 @@ with col2:
     live risk scoring beyond historical
     BTS patterns
     """)
-
 with col3:
     st.info("""
-    **Phase 4 — Passenger SMS Alerts**
-    Twilio-powered alerts for high-risk
-    flights 24–48 hours before departure
+    **Phase 3 — Regional Carrier Toolkit**
+    Free open-source ML toolkit targeting
+    regional operators like Peninsula Airways
+    (15.6% cancellation rate) with zero
+    ML infrastructure
     """)
 
 st.markdown("""
 <p class='source-text'>
     Built on BTS On-Time Performance Data (2015–2025) ·
-    XGBoost · FastAPI · Streamlit · Microsoft Azure ·
-    University of North Texas — MS Business Analytics
+    XGBoost · FastAPI · Streamlit · 
 </p>
 """, unsafe_allow_html=True)
