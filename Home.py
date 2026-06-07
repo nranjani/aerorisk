@@ -187,23 +187,24 @@ st.markdown("<hr>", unsafe_allow_html=True)
 
 # ── Roadmap ───────────────────────────────────────────────────────────────────
 st.markdown("## 🚀 Future Roadmap")
-col1, col2 = st.columns(2)
+col1, col2, col3 = st.columns(3)
 
 with col1:
     st.info("""
-    **Phase 2 — Amadeus API Integration**
-    Surface ML cancellation risk scores
-    at point of booking on third-party
-    platforms like Expedia and Google Flights
-    """)
-
-with col2:
-    st.info("""
-    **Phase 3 — Real-Time Flight Data**
+    **Phase 1 — Real-Time Flight Data**
     AviationStack API integration for
     live risk scoring beyond historical
     BTS patterns
     """)
+
+with col2:
+    st.info("""
+    **Phase 2 — Booking Platform Integration**
+    Amadeus GDS connection to surface
+    ML cancellation risk scores at point
+    of booking on Expedia and Google Flights
+    """)
+
 with col3:
     st.info("""
     **Phase 3 — Regional Carrier Toolkit**
@@ -212,7 +213,6 @@ with col3:
     (15.6% cancellation rate) with zero
     ML infrastructure
     """)
-
 st.markdown("""
 <p class='source-text'>
     Built on BTS On-Time Performance Data (2015–2025) ·
