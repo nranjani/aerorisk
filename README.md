@@ -1,7 +1,7 @@
 # ✈️ AeroRisk Intelligence Platform
 ### Flight Cancellation Prediction & Carrier Benchmarking System
 
-[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://your-app-url.streamlit.app)
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://aerorisk-sgj8edbw5sfz3urjaqzpnk.streamlit.app)
 
 ---
 
