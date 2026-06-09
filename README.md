@@ -20,7 +20,6 @@ AeroRisk fills this gap using 10 years of publicly available BTS flight data.
 |---|---|---|
 | 🔍 Cancellation Risk Checker | Passengers | XGBoost risk score + safer alternatives |
 | 📉 Delay Cause Breakdown | OCC Teams | Root cause attribution + OCC action |
-| 🏆 Safest Airline Recommender | Airport Analysts | Normalized safety ranking by station |
 
 ## 📊 Key Findings
 - **220,000+** BTS flight records analyzed (2015–2025)
@@ -56,7 +55,6 @@ aerorisk/
 └── pages/
     ├── 1_Cancellation_Risk_Checker.py
     ├── 2_Delay_Cause_Breakdown.py
-    └── 3_Safest_Airline_Recommender.py
 ```
 
 ## 🚀 Future Roadmap
